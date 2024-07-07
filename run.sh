@@ -3,4 +3,4 @@ if ! command -v docker >/dev/null 2>&1; then
     exit 1
 fi
 
-docker run -it -v `pwd`:/temp --platform linux/amd64 pdf_processor:latest process_pdf $1
+docker run -it -v `pwd`:/temp saiansh/pdf2epub:latest process_pdf $1
